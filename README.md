@@ -42,7 +42,7 @@ make menuconfig
 - build kernel using ```make```
 - in the case that you assigned multiple threads/cores to your VM, you can use ```-j``` argument to utilize it all:
 ```
-make -j {how many core you have]
+make -j {how many core you have}
 ```
 - If you are compiling the kernel on Ubuntu, you may receive the following error that interrupts the building process:
 ```
@@ -65,3 +65,18 @@ sudo make modules_install
 ```
 sudo make install
 ```
+- Reboot system
+- after reboot, check kernel version using the command below
+```
+uname -r
+```
+
+##### Step 7: Changing Kernel
+- Press **Shift** and restart system
+- Waiting system restarted until this screen appeared
+
+![changing kernel](https://i.stack.imgur.com/sSCzp.png)
+- Select the second option
+
+![changing kernel](https://i.stack.imgur.com/yYhnM.png)
+- Select the kernel version you compiled
